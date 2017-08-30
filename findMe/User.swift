@@ -11,6 +11,7 @@ import Foundation
 class User{
     
     // MARK: Properties
+    
     var name: String
     var lastname: String
     var pet: Pet

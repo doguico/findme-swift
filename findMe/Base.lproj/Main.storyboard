@@ -136,21 +136,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-Qi-mCE">
-                                <rect key="frame" x="16" y="72" width="79" height="170"/>
+                                <rect key="frame" x="16" y="28" width="79" height="170"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCx-Dc-z99">
-                                <rect key="frame" x="280.5" y="72" width="78.5" height="170"/>
+                                <rect key="frame" x="280.5" y="28" width="78.5" height="170"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="700" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="r1t-XC-2Pj">
-                                <rect key="frame" x="102.5" y="72" width="170" height="170"/>
+                                <rect key="frame" x="102.5" y="28" width="170" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="r1t-XC-2Pj" secondAttribute="height" multiplier="1:1" id="Hcx-cZ-kDn"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PYq-nE-SpS">
-                                <rect key="frame" x="85" y="250" width="117" height="122.5"/>
+                                <rect key="frame" x="85" y="206" width="117" height="122.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pet name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLU-8c-zGD">
                                         <rect key="frame" x="0.0" y="0.0" width="77" height="20.5"/>
@@ -185,7 +185,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nEU-4p-Qny">
-                                <rect key="frame" x="210" y="250" width="80" height="122.5"/>
+                                <rect key="frame" x="210" y="206" width="80" height="122.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tornado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1A-0d-P7F">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="20.5"/>
@@ -220,10 +220,10 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-pt-fD6">
-                                <rect key="frame" x="16" y="250" width="61" height="122.5"/>
+                                <rect key="frame" x="16" y="206" width="61" height="122.5"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slr-jF-RoT">
-                                <rect key="frame" x="298" y="250" width="61" height="122.5"/>
+                                <rect key="frame" x="298" y="206" width="61" height="122.5"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -294,15 +294,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Se ha encontrado a " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD1-eQ-WZ9">
-                                            <rect key="frame" x="98" y="8" width="153" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Layla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-uI-VJf">
-                                            <rect key="frame" x="209" y="50" width="40" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Has encontrado a Pepe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-uI-VJf">
+                                            <rect key="frame" x="98" y="0.0" width="233" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -331,12 +324,15 @@
                                 <segment title="Found by you"/>
                                 <segment title="Found by others"/>
                             </segments>
+                            <connections>
+                                <action selector="changeNotifications:" destination="AJ0-WW-Ase" eventType="valueChanged" id="HB1-RS-dNX"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZA-70-nFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1582" y="99"/>
+            <point key="canvasLocation" x="1581.5999999999999" y="98.50074962518741"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hut-qr-gbu">

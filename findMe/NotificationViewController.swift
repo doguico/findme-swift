@@ -22,13 +22,6 @@ class NotificationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        let image = UIImage(named: "defaultImage")
-        let pet = Pet(name: "Lucy", description: "Es buenita", picture: image)
-        let userOwner = User(name: "Adriana", lastname: "Fernandez", pet: pet, phoneNumber: "123123123")
-        let userFound = User(name: "Mauro", lastname: "Benavidez", pet: pet, phoneNumber: "987987987")
-        notification = Notification(userDogOwner: userOwner, userFoundDog: userFound, latitude: 123, longitude: 123, date: Date.init())
         
         self.petImageView.image = notification?.userDogOwner.pet.picture
         self.petNameLabel.text = notification?.userDogOwner.pet.name
