@@ -104,11 +104,11 @@
             </objects>
             <point key="canvasLocation" x="1582" y="-737"/>
         </scene>
-        <!--My Profile-->
+        <!--My profile-->
         <scene sceneID="D9Q-gX-kcX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5w-xu-l1f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Profile" id="Ghe-Il-Yop"/>
+                    <tabBarItem key="tabBarItem" title="My profile" image="icons8-User-25" id="Ghe-Il-Yop"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hvH-Yc-QqX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -356,7 +356,7 @@
         <scene sceneID="Gpu-rs-pQb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YFW-Ii-cn3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" id="NJU-I5-cu9"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="icons8-Notification-25" id="NJU-I5-cu9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XJk-PE-2hR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -414,7 +414,7 @@
         <scene sceneID="G3r-GP-w1I">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4v-03-Ck6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scan" id="pkx-w3-Krr"/>
+                    <tabBarItem key="tabBarItem" title="Scan" image="icons8-QR Code-25" id="pkx-w3-Krr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xmE-aL-1ww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -432,6 +432,9 @@
     </scenes>
     <resources>
         <image name="defaultImage" width="540" height="540"/>
+        <image name="icons8-Notification-25" width="25" height="25"/>
+        <image name="icons8-QR Code-25" width="25" height="25"/>
+        <image name="icons8-User-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="e2S-v7-tx5"/>
