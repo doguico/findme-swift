@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyProfileViewController: UIViewController {
+class MyProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // MARK: Properties
     
@@ -41,7 +41,31 @@ class MyProfileViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+            fatalError("Expected a dictionary containing an image, but was provided the following: \(info)")
+        }
+        
+        // Set photoImageView to display the selected image.
+        user?.pet.picture = selectedImage
+        
+        // Dismiss the picker.
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     // MARK: Actions
     
     @IBAction func saveChanges(_ sender: UIBarButtonItem) {
@@ -52,6 +76,7 @@ class MyProfileViewController: UIViewController {
         user?.pet.description = self.petDescriptionTextField.text!
         user?.phoneNumber = self.phoneNumberTextField.text!
     }
+
 
 }
 

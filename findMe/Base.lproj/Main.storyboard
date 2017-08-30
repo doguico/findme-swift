@@ -26,11 +26,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-ry-gti">
                                 <rect key="frame" x="16" y="64" width="343" height="532.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-1l-TmD">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-1l-TmD">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="332.5"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fAq-1l-TmD" secondAttribute="height" multiplier="31:30" id="hlf-It-v5W"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="scM-GG-yhs" appends="YES" id="gWU-MX-tiZ"/>
+                                        </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cGJ-Ug-6e7">
                                         <rect key="frame" x="0.0" y="342.5" width="343" height="190"/>
@@ -101,6 +105,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="scM-GG-yhs">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="1Ln-Rf-eIu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1582" y="-737"/>
         </scene>
