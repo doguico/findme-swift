@@ -18,17 +18,17 @@ class NotificationViewController: UIViewController {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var notification: Notification?
+    var notification: Notification!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.petImageView.image = notification?.userDogOwner.pet.picture
-        self.petNameLabel.text = notification?.userDogOwner.pet.name
-        self.ownerLabel.text = notification?.userDogOwner.name
-        self.foundByLabel.text = notification?.userFoundDog.name
-        self.phoneNumberLabel.text = notification?.userFoundDog.phoneNumber
-        self.descriptionLabel.text = notification?.userDogOwner.pet.description
+        self.petImageView.image = notification.userDogOwner.pet.picture
+        self.petNameLabel.text = notification.userDogOwner.pet.name
+        self.ownerLabel.text = notification.userDogOwner.name
+        self.foundByLabel.text = notification.userFoundDog.name
+        self.phoneNumberLabel.text = notification.userFoundDog.phoneNumber
+        self.descriptionLabel.text = notification.userDogOwner.pet.description
     }
 
     override func didReceiveMemoryWarning() {

@@ -68,6 +68,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D362CDD1F58670500A62FB3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D82E1271F55F7D100D30E19 /* MyProfileViewController.swift */,
+				8D82E1601F5641E000D30E19 /* NotificationsTableViewController.swift */,
+				8D82E15E1F563FF900D30E19 /* NotificationTableViewCell.swift */,
+				8D82E1541F562CED00D30E19 /* NotificationViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8D362CDE1F58671200A62FB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D82E14E1F5604FF00D30E19 /* Pet.swift */,
+				8D82E1501F56052100D30E19 /* User.swift */,
+				8D82E1521F56053E00D30E19 /* Notification.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8D362CDF1F58693D00A62FB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D82E1291F55F7D100D30E19 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		8D82E1191F55F7D100D30E19 = {
 			isa = PBXGroup;
 			children = (
@@ -89,18 +118,13 @@
 		8D82E1241F55F7D100D30E19 /* findMe */ = {
 			isa = PBXGroup;
 			children = (
+				8D362CDF1F58693D00A62FB3 /* View */,
+				8D362CDE1F58671200A62FB3 /* Model */,
+				8D362CDD1F58670500A62FB3 /* Controller */,
 				8D82E1251F55F7D100D30E19 /* AppDelegate.swift */,
-				8D82E1271F55F7D100D30E19 /* MyProfileViewController.swift */,
-				8D82E1291F55F7D100D30E19 /* Main.storyboard */,
-				8D82E1601F5641E000D30E19 /* NotificationsTableViewController.swift */,
 				8D82E12C1F55F7D100D30E19 /* Assets.xcassets */,
 				8D82E12E1F55F7D100D30E19 /* LaunchScreen.storyboard */,
 				8D82E1311F55F7D100D30E19 /* Info.plist */,
-				8D82E14E1F5604FF00D30E19 /* Pet.swift */,
-				8D82E1501F56052100D30E19 /* User.swift */,
-				8D82E1521F56053E00D30E19 /* Notification.swift */,
-				8D82E15E1F563FF900D30E19 /* NotificationTableViewCell.swift */,
-				8D82E1541F562CED00D30E19 /* NotificationViewController.swift */,
 			);
 			path = findMe;
 			sourceTree = "<group>";
@@ -432,6 +456,7 @@
 				8D82E1411F55F7D100D30E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8D82E1421F55F7D100D30E19 /* Build configuration list for PBXNativeTarget "findMeTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +465,7 @@
 				8D82E1441F55F7D100D30E19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

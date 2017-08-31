@@ -19,17 +19,8 @@ class NotificationsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        // Do any additional setup after loading the view.
         
         notifications = loadFoundByYouNotifications()
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -135,19 +126,16 @@ class NotificationsTableViewController: UITableViewController {
         
         let image = UIImage(named: "dog")
         let image1 = UIImage(named: "dog1")
-        let image2 = UIImage(named: "dog2")
         let image3 = UIImage(named: "dog3")
         let image4 = UIImage(named: "dog4")
         
         let pet = Pet(name: "Slash", description: "Escucha guns n roses", picture: image)
         let pet1 = Pet(name: "Flora", description: "Esta un poco ciega", picture: image1)
-        let pet2 = Pet(name: "Rocco", description: "No come carne", picture: image2)
         let pet3 = Pet(name: "Joaquin", description: "Juega al futbol", picture: image3)
         let pet4 = Pet(name: "Lucas", description: "Tiene muchas pulgas", picture: image4)
         
         let user = User(name: "Guido", lastname: "Corazza", pet: pet, phoneNumber: "099999999")
         let user1 = User(name: "Felipe", lastname: "Fernandez", pet: pet1, phoneNumber: "099123123")
-        let user2 = User(name: "Mario", lastname: "Gutierrez", pet: pet2, phoneNumber: "098456678")
         let user3 = User(name: "Jonn", lastname: "Snow", pet: pet3, phoneNumber: "091845764")
         let user4 = User(name: "Marcelo", lastname: "Gallardo", pet: pet4, phoneNumber: "094892098")
 
@@ -165,20 +153,14 @@ class NotificationsTableViewController: UITableViewController {
         let image = UIImage(named: "dog")
         let image1 = UIImage(named: "dog1")
         let image2 = UIImage(named: "dog2")
-        let image3 = UIImage(named: "dog3")
-        let image4 = UIImage(named: "dog4")
         
         let pet = Pet(name: "Slash", description: "Escucha guns n roses", picture: image)
         let pet1 = Pet(name: "Flora", description: "Esta un poco ciega", picture: image1)
         let pet2 = Pet(name: "Rocco", description: "No come carne", picture: image2)
-        let pet3 = Pet(name: "Joaquin", description: "Juega al futbol", picture: image3)
-        let pet4 = Pet(name: "Lucas", description: "Tiene muchas pulgas", picture: image4)
         
         let user = User(name: "Guido", lastname: "Corazza", pet: pet, phoneNumber: "099999999")
         let user1 = User(name: "Felipe", lastname: "Fernandez", pet: pet1, phoneNumber: "099123123")
         let user2 = User(name: "Mario", lastname: "Gutierrez", pet: pet2, phoneNumber: "098456678")
-        let user3 = User(name: "Jonn", lastname: "Snow", pet: pet3, phoneNumber: "091845764")
-        let user4 = User(name: "Marcelo", lastname: "Gallardo", pet: pet4, phoneNumber: "094892098")
         
         let notification1 = Notification(userDogOwner: user, userFoundDog: user2, latitude: 11500, longitude: 12300, date: Date.init())
         let notification2 = Notification(userDogOwner: user, userFoundDog: user1, latitude: 11000, longitude: 12333, date: Date.init())

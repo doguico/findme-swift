@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="baf-nf-C2Y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3r7-7i-TsV">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fPw-ry-gti">
                                 <rect key="frame" x="16" y="64" width="343" height="532.5"/>
                                 <subviews>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-1l-TmD">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="170" placeholderIntrinsicHeight="170" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-1l-TmD">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="332.5"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -116,6 +116,7 @@
         <!--My profile-->
         <scene sceneID="D9Q-gX-kcX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-qG-HkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5w-xu-l1f" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My profile" image="icons8-User-25" id="Ghe-Il-Yop"/>
                     <toolbarItems/>
@@ -128,7 +129,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z8c-aj-9pK"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-qG-HkU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="-737"/>
         </scene>
@@ -346,6 +346,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hut-qr-gbu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVe-Ug-52e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lf3-4u-w04" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c4q-4p-xDk">
@@ -357,13 +358,13 @@
                         <segue destination="Nqk-9X-cpX" kind="relationship" relationship="rootViewController" id="CbW-jP-Rpy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MVe-Ug-52e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1582" y="817"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="Gpu-rs-pQb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ooN-Vt-wNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YFW-Ii-cn3" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notifications" image="icons8-Notification-25" id="NJU-I5-cu9"/>
                     <toolbarItems/>
@@ -376,13 +377,77 @@
                         <segue destination="AJ0-WW-Ase" kind="relationship" relationship="rootViewController" id="ehT-Gz-Q6b"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ooN-Vt-wNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RVr-g5-I9J">
+            <objects>
+                <viewController id="3r7-7i-TsV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tuP-rS-xMy"/>
+                        <viewControllerLayoutGuide type="bottom" id="unK-gZ-ZBH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JVq-3A-6as">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-Gu-dMO">
+                                <rect key="frame" x="16" y="318.5" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ5-qx-tAX">
+                                <rect key="frame" x="16" y="281" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYd-fq-tuN">
+                                <rect key="frame" x="166.5" y="356.5" width="42" height="30"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <segue destination="baf-nf-C2Y" kind="show" id="RWk-7Q-ohx"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-T0-nVj">
+                                <rect key="frame" x="216.5" y="356.5" width="142.5" height="30"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHy-Oq-TA3">
+                                <rect key="frame" x="16" y="356.5" width="142.5" height="30"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FYd-fq-tuN" firstAttribute="top" secondItem="VFh-Gu-dMO" secondAttribute="bottom" constant="8" symbolic="YES" id="4l4-SA-Swq"/>
+                            <constraint firstItem="VFh-Gu-dMO" firstAttribute="centerX" secondItem="JVq-3A-6as" secondAttribute="centerX" id="EGK-fK-c2S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hJ5-qx-tAX" secondAttribute="trailing" id="FXF-MB-86o"/>
+                            <constraint firstItem="TsG-T0-nVj" firstAttribute="bottom" secondItem="FYd-fq-tuN" secondAttribute="bottom" id="Gav-dc-5r1"/>
+                            <constraint firstItem="FYd-fq-tuN" firstAttribute="leading" secondItem="FHy-Oq-TA3" secondAttribute="trailing" constant="8" symbolic="YES" id="H8N-TW-Wyw"/>
+                            <constraint firstItem="VFh-Gu-dMO" firstAttribute="centerY" secondItem="JVq-3A-6as" secondAttribute="centerY" id="HAA-xi-5lh"/>
+                            <constraint firstItem="VFh-Gu-dMO" firstAttribute="leading" secondItem="JVq-3A-6as" secondAttribute="leadingMargin" id="Okg-xk-eNa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TsG-T0-nVj" secondAttribute="trailing" id="SXw-qH-r7y"/>
+                            <constraint firstItem="hJ5-qx-tAX" firstAttribute="leading" secondItem="JVq-3A-6as" secondAttribute="leadingMargin" id="YfC-gV-vca"/>
+                            <constraint firstItem="FHy-Oq-TA3" firstAttribute="top" secondItem="FYd-fq-tuN" secondAttribute="top" id="Zze-vo-TtY"/>
+                            <constraint firstItem="TsG-T0-nVj" firstAttribute="leading" secondItem="FYd-fq-tuN" secondAttribute="trailing" constant="8" symbolic="YES" id="aWV-oW-LWT"/>
+                            <constraint firstItem="FHy-Oq-TA3" firstAttribute="leading" secondItem="JVq-3A-6as" secondAttribute="leadingMargin" id="az1-f6-D8e"/>
+                            <constraint firstItem="TsG-T0-nVj" firstAttribute="top" secondItem="FYd-fq-tuN" secondAttribute="top" id="gVz-6d-Bty"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VFh-Gu-dMO" secondAttribute="trailing" id="i0G-pD-alx"/>
+                            <constraint firstItem="FHy-Oq-TA3" firstAttribute="bottom" secondItem="FYd-fq-tuN" secondAttribute="bottom" id="luh-Fr-FWb"/>
+                            <constraint firstItem="FHy-Oq-TA3" firstAttribute="width" secondItem="TsG-T0-nVj" secondAttribute="width" id="om6-62-1XZ"/>
+                            <constraint firstItem="VFh-Gu-dMO" firstAttribute="top" secondItem="hJ5-qx-tAX" secondAttribute="bottom" constant="8" symbolic="YES" id="uGH-UL-U1B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZJ-t0-tje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2186.4000000000001" y="-721.88905547226398"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PmR-O8-gdm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1g6-Jg-k9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="baf-nf-C2Y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="cCJ-Rf-D1w">
@@ -396,11 +461,10 @@
                         <segue destination="D5w-xu-l1f" kind="relationship" relationship="viewControllers" id="F2R-VQ-3mo"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1g6-Jg-k9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1166" y="-737"/>
         </scene>
-        <!--View Controller-->
+        <!--Scan the code-->
         <scene sceneID="lda-ap-pnW">
             <objects>
                 <viewController id="5lf-s2-8jw" sceneMemberID="viewController">
@@ -411,9 +475,19 @@
                     <view key="view" contentMode="scaleToFill" id="Snu-py-mVe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-4c-DbQ">
+                                <rect key="frame" x="165" y="318.5" width="45" height="30"/>
+                                <state key="normal" title="SCAN!"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTb-4c-DbQ" firstAttribute="centerX" secondItem="Snu-py-mVe" secondAttribute="centerX" id="gVE-EI-ihD"/>
+                            <constraint firstItem="NTb-4c-DbQ" firstAttribute="centerY" secondItem="Snu-py-mVe" secondAttribute="centerY" id="uMf-Wa-wdk"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FeN-08-PYi"/>
+                    <navigationItem key="navigationItem" title="Scan the code" id="FeN-08-PYi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3P-cA-3yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -422,6 +496,7 @@
         <!--Scan-->
         <scene sceneID="G3r-GP-w1I">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MjX-A4-IRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j4v-03-Ck6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Scan" image="icons8-QR Code-25" id="pkx-w3-Krr"/>
                     <toolbarItems/>
@@ -434,7 +509,6 @@
                         <segue destination="5lf-s2-8jw" kind="relationship" relationship="rootViewController" id="Mlc-2l-oRr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MjX-A4-IRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="-1467"/>
         </scene>
@@ -446,6 +520,6 @@
         <image name="icons8-User-25" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e2S-v7-tx5"/>
+        <segue reference="CbW-jP-Rpy"/>
     </inferredMetricsTieBreakers>
 </document>
